@@ -3,4 +3,11 @@
     <string name="texto_grados">23°</string>
     <string name="texto_ciudad">Playa del Carmen</string>
     <string name="texto_estatus">Nublado</string>
+    <string name="texto_bienvenida">
+        Bienvenido a mi aplicación del Clima.
+        Para poder ver el clima de una ciudad selecciona la opción de abajo.</string>
+    <string name="texto_boton_playa">El Clima de la ciudad de Playa del Carmen</string>
+    <string name="texto_boton_carrillo">El Clima de la ciudad de Felipe Carrillo Puerto</string>
+    <string name="texto_boton_chetumal">El Clima de la ciudad de Chetumal</string>
+    <string name="texto_boton_cancun">El Clima de la ciudad de Cancún</string>
 </resources>

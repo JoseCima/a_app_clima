@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Ciudades">
+
+    <TextView
+        android:id="@+id/tvBienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_margin="16dp"
+        android:text="@string/texto_bienvenida" />
+
+    <Button
+        android:id="@+id/btn_playa"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:text="@string/texto_boton_playa"
+        android:textColor="@color/colorCiudad" />
+
+    <Button
+        android:id="@+id/btn_chetumal"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:text="@string/texto_boton_chetumal"
+        android:textColor="@color/colorCiudad" />
+
+    <Button
+        android:id="@+id/btn_carrillo"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:text="@string/texto_boton_carrillo"
+        android:textColor="@color/colorCiudad" />
+
+    <Button
+        android:id="@+id/btn_cancun"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:text="@string/texto_boton_cancun"
+        android:textColor="@color/colorCiudad" />
+</LinearLayout>
