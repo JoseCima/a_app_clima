@@ -21,7 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/material_dynamic_neutral80"
         android:text="@string/texto_boton_playa"
         android:textColor="@color/colorCiudad" />
 
@@ -31,7 +30,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/material_dynamic_neutral80"
         android:text="@string/texto_boton_chetumal"
         android:textColor="@color/colorCiudad" />
 
@@ -41,7 +39,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/material_dynamic_neutral80"
         android:text="@string/texto_boton_carrillo"
         android:textColor="@color/colorCiudad" />
 
@@ -51,7 +48,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/material_dynamic_neutral80"
         android:text="@string/texto_boton_cancun"
         android:textColor="@color/colorCiudad" />
 </LinearLayout>

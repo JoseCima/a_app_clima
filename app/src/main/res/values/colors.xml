@@ -10,5 +10,5 @@
     <color name="rosita">#FF0266</color>
     <color name="colorCiudad">#FF0266</color>
     <color name="colorEstatus">#4158DA</color>
-    <color name="colorGrados">@color/black</color>
+    <color name="colorGrados">#000000</color>
 </resources>
