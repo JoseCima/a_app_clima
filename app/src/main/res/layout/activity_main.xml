@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#30D8C8"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,9 +13,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="192dp"
-        android:layout_marginBottom="408dp"
-        android:text="0°" />
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="402dp"
+        android:text="@string/texto_grados"
+        android:textColor="@color/colorGrados"
+        android:textSize="72sp" />
 
     <TextView
         android:id="@+id/tvCiudad"
@@ -22,9 +25,11 @@
         android:layout_height="36dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="350dp"
-        android:text="Playa del Carmen" />
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="294dp"
+        android:text="@string/texto_ciudad"
+        android:textColor="@color/colorCiudad"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/tvEstatus"
@@ -32,7 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="170dp"
-        android:layout_marginBottom="296dp"
-        android:text="Nublado" />
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="233dp"
+        android:text="@string/texto_estatus"
+        android:textColor="@color/colorEstatus"
+        android:textSize="24sp" />
 </RelativeLayout>

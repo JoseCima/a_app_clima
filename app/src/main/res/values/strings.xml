@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">a_app_clima</string>
+    <string name="app_name">App Clima by JoseCima</string>
+    <string name="texto_grados">23°</string>
+    <string name="texto_ciudad">Playa del Carmen</string>
+    <string name="texto_estatus">Nublado</string>
 </resources>
