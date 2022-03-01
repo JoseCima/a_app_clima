@@ -2,8 +2,14 @@ package com.example.a_app_clima
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import android.widget.TextView
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +28,17 @@ class MainActivity : AppCompatActivity() {
         tvEstatus = findViewById(R.id.tvEstatus)
 
         val Ciudad = intent.getStringExtra("com.example.a_app_clima.ciudades.CIUDAD")
+
+
+        //chetumal: 3531023
+        //de72b2851efe338c4ee4cee2a5385a03
+        if(Network.hayRed(this)){
+            //ejecturar solicitud HTTP
+            solicitudHTTPVolley("https://api.openweathermap.org/data/2.5/weather?q=chetumal&appid=de72b2851efe338c4ee4cee2a5385a03")
+
+        }else{
+            //Mostrar mensaje de error
+        }
 
         Toast.makeText(this, Ciudad, Toast.LENGTH_SHORT).show()
 
@@ -55,5 +72,18 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "No se encuentra la información", Toast.LENGTH_SHORT).show()
         }
 
+    }
+
+
+    private fun solicitudHTTPVolley(url:String){
+        val queue = Volley.newRequestQueue(this)
+
+        val solicitud = StringRequest(Request.Method.GET, url , Response.Listener<String>{
+            response ->
+            try {
+                Log.d( "solicitudHTTPVolley", response)
+            }catch (e: Exception){
+            } }, Response.ErrorListener{} )
+        queue.add(solicitud)
     }
 }
