@@ -24,25 +24,25 @@ class Ciudades : AppCompatActivity() {
         bPlaya.setOnClickListener(View.OnClickListener {
             //hacia donde queremos ir
             val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra(TAG, "Ciudad de Playa del Carmen")
+            intent.putExtra(TAG, "3521342")
             startActivity(intent)
         })
 
         bChetumal.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra(TAG, "Ciudad de Chetumal")
+            intent.putExtra(TAG, "3531023")
             startActivity(intent)
         })
 
         bCarrillo.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra(TAG, "Ciudad de Felipe Carrillo Puerto")
+            intent.putExtra(TAG, "3527639")
             startActivity(intent)
         })
 
         bCancun.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra(TAG, "Ciudad de Cancún")
+            intent.putExtra(TAG, "3531673")
             startActivity(intent)
         })
     }

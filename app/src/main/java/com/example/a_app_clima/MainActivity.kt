@@ -32,13 +32,17 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, Ciudad, Toast.LENGTH_SHORT).show()
 
         //chetumal: 3531023
+        //carrillo: 3527639
+        //Playa del Carmen: 3521342
+        //Cancun: 3531673
         //de72b2851efe338c4ee4cee2a5385a03
         if(Network.hayRed(this)){
             //ejecturar solicitud HTTP
-            solicitudHTTPVolley("https://api.openweathermap.org/data/2.5/weather?q=chetumal&appid=de72b2851efe338c4ee4cee2a5385a03")
+            solicitudHTTPVolley("https://api.openweathermap.org/data/2.5/weather?id="+Ciudad+"&appid=de72b2851efe338c4ee4cee2a5385a03&units=metric&lang=es")
 
         }else{
             //Mostrar mensaje de error
+            Toast.makeText(this, "No hay Red", Toast.LENGTH_SHORT).show()
         }
 
 
