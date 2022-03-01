@@ -10,4 +10,6 @@
     <string name="texto_boton_carrillo">El Clima de la ciudad de Felipe Carrillo Puerto</string>
     <string name="texto_boton_chetumal">El Clima de la ciudad de Chetumal</string>
     <string name="texto_boton_cancun">El Clima de la ciudad de Cancún</string>
+
+    <string name="texto_boton_shanghai">El Clima de la ciudad de Shangai</string>
 </resources>
