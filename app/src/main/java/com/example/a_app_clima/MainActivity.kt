@@ -9,6 +9,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.google.gson.Gson
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         tvEstatus = findViewById(R.id.tvEstatus)
 
         val Ciudad = intent.getStringExtra("com.example.a_app_clima.ciudades.CIUDAD")
-
+        Toast.makeText(this, Ciudad, Toast.LENGTH_SHORT).show()
 
         //chetumal: 3531023
         //de72b2851efe338c4ee4cee2a5385a03
@@ -40,8 +41,10 @@ class MainActivity : AppCompatActivity() {
             //Mostrar mensaje de error
         }
 
-        Toast.makeText(this, Ciudad, Toast.LENGTH_SHORT).show()
 
+
+
+        /*
         val ciudadPlaya = Ciudad(nombre ="Playa del Carmen", grados = 15, estatus = "Soleado")
         val ciudadChetumal = Ciudad(nombre ="Chetumal", grados = 30, estatus = "Cielo Despejado")
         val ciudadCarrillo = Ciudad(nombre ="Felipe Carrillo Puerto", grados = 24, estatus = "Nublado")
@@ -70,7 +73,7 @@ class MainActivity : AppCompatActivity() {
             tvEstatus?.text=ciudadCancun.estatus
         }else{
             Toast.makeText(this, "No se encuentra la información", Toast.LENGTH_SHORT).show()
-        }
+        }*/
 
     }
 
@@ -82,6 +85,15 @@ class MainActivity : AppCompatActivity() {
             response ->
             try {
                 Log.d( "solicitudHTTPVolley", response)
+
+                val gson = Gson()
+                val ciudad = gson.fromJson(response, Ciudad::class.java)
+
+                tvCiudad?.text = ciudad.name
+                tvGrados?.text= ciudad.main?.temp.toString() + "°"
+                tvEstatus?.text=ciudad.weather?.get(0)?.description
+
+
             }catch (e: Exception){
             } }, Response.ErrorListener{} )
         queue.add(solicitud)
